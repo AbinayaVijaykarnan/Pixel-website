@@ -107,4 +107,13 @@
         top:20%;
      }
  }
+
+ @media only screen and (max-width:420px)and (min-width:200px){
+    #coverpage h2{
+        font-size:1.5rem;
+    }
+    #footer h4,ul{
+        margin:0;
+    }
+ }
  
