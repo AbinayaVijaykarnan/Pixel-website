@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+                                     /* Nav*/
+
+#logo img{
+    width:30%;
+    margin:5px;
+}
+
+/*
+#menulinks ul{
+    display:flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
+#menulinks a{
+    font-weight:bold;
+    font-size:1rem;
+}
+#menulinks a:hover{
+    background-color:rgba(216, 216, 21, 0.685);
+    border-radius:10px;
+    padding:10px; 
+}*/
+
+                                        /*Coverpage*/
+#coverpage{
+    background-image: url(images/coverimg1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity:0.9;
+}
+#coverpage h2{
+    color:rgba(29, 6, 6, 0.842);
+    font-size:3rem;
+}
+
+                                        /*Projects*/
+/*#projects img{
+    float:left;
+    margin-right:10px;
+}*/
+                                        /*Testimonals*/
+ .carousel-caption{   /*important-default bootstrap class is changed*/
+     position:absolute;
+     top:30% !important;
+ }           
+ 
+ .carousel-indicators{
+    position:absolute;
+    bottom:2%;               /*important-default bootstrap class is changed*/
+ }
+
+                                        /*Team*/
+#team ul, #contactus ul{
+    display:flex;         /* converts column to row of all icons i.e fb,twitter and google icons*/
+    justify-content:center;
+}
+#team li, #contactus li{
+     list-style-type: none;
+     padding-right:30px;
+ }
+
+                /*responsive template*/
+
+
+@media only screen and (min-width:992px) {
+    #logo img{
+        width:50%;
+    }
+    #navbar{         /*important*/
+        width:100%;
+        display: flex;  
+        justify-content:flex-end;
+    }
+}
+
+ @media only screen and (max-width:767px)  /*important-since <767 we need to apply below properties, so max-width:767px is used*/
+ {  
+     
+     #contactus{
+         text-align: center;
+     }
+     #contactus ul{
+         display: flex;
+         flex-direction: column;
+         padding:10px 0;
+     }
+
+             /*footer*/
+    #footer h4,ul{
+        margin:0 150px;
+    }
+    #footer h4{
+            padding:10px 0;
+    }
+ }
+
+ @media only screen and (max-width:552px){
+    #nav button{           /*important-for fixing burger icon in <552px screens,use the following.*/
+        margin-left:80%;
+        position: absolute;
+        top:20%;
+     }
+ }
+ 
